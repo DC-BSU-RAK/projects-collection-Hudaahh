@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aura_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Mood"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#1B2452"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the vibe that matches your energy today."
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/calmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="🌙  Calm"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/aura_button"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/motivatedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="⚡  Motivated"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF7A59"
+            android:layout_marginTop="18dp"/>
+
+        <Button
+            android:id="@+id/tiredBtn"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="☁️  Tired"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5B8DEF"
+            android:layout_marginTop="18dp"/>
+
+        <Button
+            android:id="@+id/stressedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="🌧  Stressed"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B61FF"
+            android:layout_marginTop="18dp"/>
+
+    </LinearLayout>
+</ScrollView>

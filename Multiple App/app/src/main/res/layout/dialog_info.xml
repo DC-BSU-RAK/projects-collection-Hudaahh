@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:background="@drawable/aura_card">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨"
+        android:textSize="54sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How AuraSpace Works"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B2452"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AuraSpace creates a personalised productivity and wellbeing experience based on your mood and saved preferences. The app helps users stay focused, calm, and organised."
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F2F4FF"
+        android:padding="18dp"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✔ Mood-based productivity plans"
+            android:textSize="15sp"
+            android:textColor="#444444"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✔ Saved user preferences"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✔ Personalised wellbeing suggestions"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Close"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/aura_button"
+        android:layout_marginTop="26dp"/>
+
+</LinearLayout>
