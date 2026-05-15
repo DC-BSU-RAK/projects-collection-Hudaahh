@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ⓘ"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textColor="#1457D9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outfit Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#08245C"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Style Tip: Choose colours and layers that match your weather, occasion, and mood."
+        android:textSize="15sp"
+        android:textColor="#4B21A8"
+        android:background="#F1E9FF"
+        android:padding="14dp"
+        android:layout_marginTop="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textColor="#1457D9"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/tryAgainBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Try Again"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1457D9"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fit Finder"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#08245C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outfit Calculator"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="14dp" />
+
+        <!-- HEADER CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/card_background"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Find the perfect outfit for your weather, occasion, and mood."
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#08245C"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="👗"
+                android:textSize="58sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- WEATHER -->
+
+        <TextView
+            android:text="1. Weather"
+            style="@style/SectionTitle" />
+
+        <RadioGroup
+            android:id="@+id/weatherGroup"
+            style="@style/ButtonGroup">
+
+            <RadioButton
+                android:id="@+id/hotBtn"
+                android:text="Hot"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/coldBtn"
+                android:text="Cold"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/rainyBtn"
+                android:text="Rainy"
+                style="@style/ChoiceButton"/>
+        </RadioGroup>
+
+        <!-- OCCASION -->
+
+        <TextView
+            android:text="2. Occasion"
+            style="@style/SectionTitle" />
+
+        <RadioGroup
+            android:id="@+id/occasionGroup"
+            style="@style/ButtonGroup">
+
+            <RadioButton
+                android:id="@+id/formalBtn"
+                android:text="Formal"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/partyBtn"
+                android:text="Party"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/sportsBtn"
+                android:text="Sports"
+                style="@style/ChoiceButton"/>
+        </RadioGroup>
+
+        <!-- MOOD -->
+
+        <TextView
+            android:text="3. Mood"
+            style="@style/SectionTitle" />
+
+        <RadioGroup
+            android:id="@+id/moodGroup"
+            style="@style/ButtonGroup">
+
+            <RadioButton
+                android:id="@+id/confidentBtn"
+                android:text="Confident"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/lazyBtn"
+                android:text="Lazy"
+                style="@style/ChoiceButton"/>
+
+            <RadioButton
+                android:id="@+id/moodyBtn"
+                android:text="Moody"
+                style="@style/ChoiceButton"/>
+        </RadioGroup>
+
+        <!-- CALCULATE BUTTON -->
+
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Calculate Outfit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="28dp" />
+
+        <!-- RESULT CARD -->
+
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended Outfit"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#08245C"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👔"
+                android:textSize="54sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/outfitResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/detailsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="More Details"
+                android:textColor="#1457D9"
+                android:textStyle="bold"
+                android:backgroundTint="#E8F0FF"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
